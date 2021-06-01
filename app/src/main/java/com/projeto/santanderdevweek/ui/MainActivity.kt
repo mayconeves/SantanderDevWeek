@@ -25,9 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(findViewById(R.id.toolbar))
-        //toolbar.setNavigationIcon(R.drawable.ic_baseline_menu_24)
 
         // Criar o escopo desta activity recuperando a viewmodel
         mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
